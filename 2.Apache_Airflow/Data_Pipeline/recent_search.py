@@ -21,7 +21,7 @@ def create_url():
     # source, text, and withheld
     tweet_fields = "tweet.fields=author_id,conversation_id,created_at,id,in_reply_to_user_id,public_metrics,text"
     user_fields = "expansions=author_id&user.fields=id,name,username,created_at"
-    filters = "start_time=2021-02-15T00:00:00.00Z&end_time=2021-02-19T00:00:00.00Z"
+    filters = "start_time=2022-08-14T00:00:00.00Z&end_time=2021-08-18T00:00:00.00Z"
     url = "https://api.twitter.com/2/tweets/search/recent?query={}&{}&{}&{}".format(
         query, tweet_fields, user_fields, filters
     )
